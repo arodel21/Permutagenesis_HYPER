@@ -380,7 +380,7 @@ def build_parser() -> argparse.ArgumentParser:
     names.add_argument("-e", "--experiment", default="Locus",
                        help="Experiment name, used to build the default paths "
                             "(default: %(default)s)")
-    names.add_argument("--base-dir", type=Path, default=Path("08_Pipeline_predictions"),
+    names.add_argument("--base-dir", type=Path, default=Path("inputs/08_Pipeline_predictions"),
                        help="Root of the prediction tree (default: %(default)s)")
     names.add_argument("--genome", type=Path,
                        help="Reference FASTA (default: <base-dir>/genome.fa)")
@@ -388,11 +388,11 @@ def build_parser() -> argparse.ArgumentParser:
                        help="Mutant genomes and predictions "
                             "(default: <base-dir>/<experiment>)")
     names.add_argument("--json-dir", type=Path,
-                       help="Prediction configs (default: 07_JSONs/<experiment>)")
+                       help="Prediction configs (default: inputs/07_JSONs/<experiment>)")
     names.add_argument("--model-py", type=Path,
                        help="model.py copied into each mutant folder "
                             "(default: <base-dir>/model.py)")
-    names.add_argument("--pipeline-script", type=Path, default=Path("i_Run_Pipeline.sh"),
+    names.add_argument("--pipeline-script", type=Path, default=Path("inputs/i_Run_Pipeline.sh"),
                        help="Script passed to sbatch (default: %(default)s)")
 
     model = parser.add_argument_group("prediction")
@@ -429,7 +429,7 @@ def config_from_args(args: argparse.Namespace) -> Config:
     return Config(
         genome=args.genome or args.base_dir / "genome.fa",
         output_dir=output_dir,
-        json_dir=args.json_dir or Path("07_JSONs") / args.experiment,
+        json_dir=args.json_dir or Path("inputs/07_JSONs") / args.experiment,
         model_py=args.model_py or args.base_dir / "model.py",
         pipeline_script=args.pipeline_script,
         hf_model=args.hf_model,
