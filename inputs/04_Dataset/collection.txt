@@ -1,0 +1,12 @@
+index	identifier	file	sum_stat	description
+0	ATAC_50donors	02_Normalized_BigWigs/ATAC_50donors.bw	mean	ATAC_50donors
+1	CTCF_B_cell	02_Normalized_BigWigs/CTCF_B_cell.bw	mean	CTCF_B_cell
+2	CTCF_astrocyte_of_the_cerebellum	02_Normalized_BigWigs/CTCF_astrocyte_of_the_cerebellum.bw	mean	CTCF_astrocyte_of_the_cerebellum
+3	ChIP_CTCF	02_Normalized_BigWigs/ChIP_CTCF.bw	mean	ChIP_CTCF
+4	ChIP_Gata1	02_Normalized_BigWigs/ChIP_Gata1.bw	mean	ChIP_Gata1
+5	H3K27ac_ChIP	02_Normalized_BigWigs/H3K27ac_ChIP.bw	mean	H3K27ac_ChIP
+6	Huvec_ATAC	02_Normalized_BigWigs/Huvec_ATAC.bw	mean	Huvec_ATAC
+7	NFE2	02_Normalized_BigWigs/NFE2.bw	mean	NFE2
+8	TAL1_proEs_adult_BM	02_Normalized_BigWigs/TAL1_proEs_adult_BM.bw	mean	TAL1_proEs_adult_BM
+9	TAL1_proEs_adult_blood	02_Normalized_BigWigs/TAL1_proEs_adult_blood.bw	mean	TAL1_proEs_adult_blood
+10	TAL1_proEs_fetus_liver	02_Normalized_BigWigs/TAL1_proEs_fetus_liver.bw	mean	TAL1_proEs_fetus_liver
